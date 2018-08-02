@@ -3,11 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-yapen-searchbar',
   template: `
-    <p>
-      yapen-searchbar works!
-    </p>
+  <div class="searchbar">
+    <input type="text" class="sbText" autocomplete="off" autocorrect="off"
+      spellcheck="false" id="sbText" value placeholder="가고 싶은 여행지를 입력하세요.">
+  </div>
   `,
-  styles: []
+  styleUrls: [`./yapen-searchbar.css`]
 })
 export class YapenSearchbarComponent implements OnInit {
 
